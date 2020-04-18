@@ -1,5 +1,5 @@
 person:
-  lastName: zhangsan
+  #lastName: zhangsan
   age: 24
   boss: false
   birthday: 2020/04/18
@@ -12,3 +12,4 @@ person:
   dog:
     name: huahua
     age: 2
+  last-name: zhangsan
