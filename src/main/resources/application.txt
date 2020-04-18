@@ -27,4 +27,3 @@ pets:
 #2.行内写法：
 animals: [cat, dog, pig]
 
-
