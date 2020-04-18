@@ -1,2 +1,30 @@
+#基本语法
+#··字面量：普通的值（数字，字符串，布尔）
 server:
+  #左对齐的表示同级
   port: 8081
+  servlet:
+    # 双引号会转义 name: "李四 \n 张三" 会输出-  李四
+    #                                        张三
+    # 单引号不会转义 name: '李四 \n 张三' 会输出- 李四 \n 张三
+    application-display-name:
+
+#··对象,Map的写法(属性和值：键值对)
+#1.基本写法：
+friendA:
+  name: zhangsan
+  age: 24
+#2.行内写法
+friendB: {name: zhangsan, age: 24}
+
+#··数组(List,Set)
+#用-值表示数组中的一个元素
+#1.基本写法：
+pets:
+  -cat
+  -dog
+  -pig
+#2.行内写法：
+animals: [cat, dog, pig]
+
+
