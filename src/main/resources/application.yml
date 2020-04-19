@@ -1,15 +1,15 @@
-person:
-  #lastName: zhangsan
-  age: 24
-  boss: false
-  birthday: 2020/04/18
-  map: {k1: v1, k2: v2}
-  list: [lisi,wangwu,zhaoliu]
-  #list:
-  #  - lisi
-  #  - wangwu
-  #  - zhaoliu
-  dog:
-    name: huahua
-    age: 2
-  last-name: zhangsan
+#person:
+#  #lastName: zhangsan
+#  age: 24
+#  boss: false
+#  birthday: 2020/04/18
+#  map: {k1: v1, k2: v2}
+#  list: [lisi,wangwu,zhaoliu]
+#  #list:
+#  #  - lisi
+#  #  - wangwu
+#  #  - zhaoliu
+#  dog:
+#    name: huahua
+#    age: 2
+#  last-name: zhangsan

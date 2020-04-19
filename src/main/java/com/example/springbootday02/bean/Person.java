@@ -1,8 +1,11 @@
 package com.example.springbootday02.bean;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
+import javax.validation.constraints.Email;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -21,13 +24,19 @@ import java.util.Objects;
  */
 //@ConfigurationProperties告诉springboot将本类中所有属性和配置文件相关的配置进行绑定
 //只有这个组件是容器中的组件才能提供 @ConfigurationProperties的功能
-//@Component
+@Component
 @ConfigurationProperties(prefix = "person")
+@Validated//增加校验规则
 public class Person {
+    //也可以不用@ConfigurationProperties(prefix = "person")注解，用 @Value("${person.last-name}")的方式去获取配置文件中的值
+    @Value("${person.last-name}")
+    //@Email//校验规则为邮箱格式
     private String lastName;
+    //@Value("#{11*2}")
     private Integer age;
     private Boolean boss;
     private Date birthday;
+    //@Value("${person.map}")
     private Map<String,Object> map;
     private List<String> list;
     private Dog dog;
