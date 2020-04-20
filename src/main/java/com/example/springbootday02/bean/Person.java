@@ -26,10 +26,10 @@ import java.util.Objects;
 //只有这个组件是容器中的组件才能提供 @ConfigurationProperties的功能
 @Component
 @ConfigurationProperties(prefix = "person")
-@Validated//增加校验规则
+//@Validated//增加校验规则
 public class Person {
     //也可以不用@ConfigurationProperties(prefix = "person")注解，用 @Value("${person.last-name}")的方式去获取配置文件中的值
-    @Value("${person.last-name}")
+    //@Value("${person.last-name}")
     //@Email//校验规则为邮箱格式
     private String lastName;
     //@Value("#{11*2}")

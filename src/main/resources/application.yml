@@ -13,3 +13,21 @@
 #    name: huahua
 #    age: 2
 #  last-name: zhangsan
+
+#默认8080,---表示文档块
+server:
+  port: 8080
+spring:
+  profiles:
+    active: prod
+---
+server:
+  port: 8082
+spring:
+  profiles: dev
+---
+server:
+  port: 8083
+spring:
+  profiles: prod
+---

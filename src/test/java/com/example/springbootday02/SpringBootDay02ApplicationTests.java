@@ -17,6 +17,7 @@ class SpringBootDay02ApplicationTests {
     Person person;
     @Test
     void contextLoads() {
+
         System.out.println(person);
     }
 
